@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic Planner | Foluwasho Favour</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="record-strip">
+  <div class="container">
+    <span><span class="rs-label">Name:</span>Foluwasho Favour</span>
+    <span><span class="rs-label">Matric No:</span>2025/B/CSC/0651</span>
+    <span><span class="rs-label">Dept:</span>Computer Science</span>
+    <span><span class="rs-label">Email:</span>f.foluwasho3222@miva.edu.ng</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="index.html" class="brand"><span class="brand-mark">FF</span>Foluwasho Favour</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html" aria-current="page">Academic Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="section" style="padding-bottom:0;">
+    <div class="container">
+      <p class="eyebrow">Academic Planner</p>
+      <h1>Keep every assignment on the ledger</h1>
+      <p class="lede" style="max-width:60ch;">Add a task, set its due date and priority, then check
+        it off or remove it once it's done. Everything is saved in this browser, so your list is
+        still here next time you visit.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="planner-panel">
+
+        <form id="taskForm" class="task-form" novalidate>
+          <label class="visually-hidden" for="taskInput">Task name</label>
+          <input type="text" id="taskInput" placeholder="e.g. Finish Cyber Threat assignment" required maxlength="80">
+
+          <label class="visually-hidden" for="taskDate">Due date</label>
+          <input type="date" id="taskDate" aria-label="Due date">
+
+          <label class="visually-hidden" for="taskPriority">Priority</label>
+          <select id="taskPriority" aria-label="Priority">
+            <option value="low">Low priority</option>
+            <option value="medium" selected>Medium priority</option>
+            <option value="high">High priority</option>
+          </select>
+
+          <button type="submit" class="btn btn-primary">Add task</button>
+        </form>
+
+        <div class="task-filters" role="group" aria-label="Filter tasks">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="pending">Pending</button>
+          <button class="filter-btn" data-filter="done">Completed</button>
+        </div>
+
+        <ul class="task-list" id="taskList"></ul>
+        <p class="empty-state" id="emptyState">Your planner is empty. Add your first task above.</p>
+
+        <div class="planner-stats" id="plannerStats">
+          <div><b id="statTotal">0</b>Total tasks</div>
+          <div><b id="statDone">0</b>Completed</div>
+          <div><b id="statPending">0</b>Pending</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>&copy; <span id="year"></span> Foluwasho Favour. Built for CSC Web Development Assignment.</span>
+    <ul class="foot-links">
+      <li><a href="https://www.linkedin.com/in/foluwasho-favour-786645230" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="contact.html">Get in touch</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/planner.js"></script>
+</body>
+</html>

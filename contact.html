@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Foluwasho Favour</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="record-strip">
+  <div class="container">
+    <span><span class="rs-label">Name:</span>Foluwasho Favour</span>
+    <span><span class="rs-label">Matric No:</span>2025/B/CSC/0651</span>
+    <span><span class="rs-label">Dept:</span>Computer Science</span>
+    <span><span class="rs-label">Email:</span>f.foluwasho3222@miva.edu.ng</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="index.html" class="brand"><span class="brand-mark">FF</span>Foluwasho Favour</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Academic Planner</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="section" style="padding-bottom:0;">
+    <div class="container">
+      <p class="eyebrow">Contact</p>
+      <h1>Let's talk</h1>
+      <p class="lede" style="max-width:60ch;">Have a question, an opportunity, or feedback on this
+        assignment? Send a message below — every field is checked before it's marked complete.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+
+      <div>
+        <form id="contactForm" novalidate>
+          <div class="form-field" id="field-name">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="Your full name">
+            <p class="error-msg">Please enter your name.</p>
+          </div>
+
+          <div class="form-field" id="field-email">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com">
+            <p class="error-msg">Please enter a valid email address.</p>
+          </div>
+
+          <div class="form-field" id="field-phone">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="Digits only, e.g. 09120282137">
+            <p class="error-msg">Phone number should contain digits only.</p>
+          </div>
+
+          <div class="form-field" id="field-message">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message..."></textarea>
+            <p class="error-msg">Please enter a message.</p>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <aside class="contact-info">
+        <div class="card">
+          <h3>📧 Email</h3>
+          <p class="small-note mt-0">f.foluwasho3222@miva.edu.ng</p>
+        </div>
+        <div class="card">
+          <h3>📱 Phone</h3>
+          <p class="small-note mt-0">+234 912 028 2137</p>
+        </div>
+        <div class="card">
+          <h3>📍 Location</h3>
+          <p class="small-note mt-0">Rice Mill Street, Agwandogo Orozo, Abuja</p>
+        </div>
+        <div class="card">
+          <h3>🔗 LinkedIn</h3>
+          <p class="small-note mt-0">
+            <a href="https://www.linkedin.com/in/foluwasho-favour-786645230" target="_blank" rel="noopener">
+              linkedin.com/in/foluwasho-favour</a>
+          </p>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>&copy; <span id="year"></span> Foluwasho Favour. Built for CSC Web Development Assignment.</span>
+    <ul class="foot-links">
+      <li><a href="https://www.linkedin.com/in/foluwasho-favour-786645230" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="contact.html">Get in touch</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

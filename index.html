@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foluwasho Favour | Academic Portfolio</title>
+<meta name="description" content="Academic portfolio and student management platform for Foluwasho Favour, Computer Science, Miva Open University.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Student record strip -->
+<div class="record-strip">
+  <div class="container">
+    <span><span class="rs-label">Name:</span>Foluwasho Favour</span>
+    <span><span class="rs-label">Matric No:</span>2025/B/CSC/0651</span>
+    <span><span class="rs-label">Dept:</span>Computer Science</span>
+    <span><span class="rs-label">Email:</span>f.foluwasho3222@miva.edu.ng</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">FF</span>
+      Foluwasho Favour
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Academic Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-copy">
+        <p class="eyebrow hero-kicker">B.S. Computer Science &middot; Miva Open University</p>
+        <h1>Welcome — I'm Favour.<br>I build, lead, and tell stories with tech.</h1>
+        <p class="lede">A creative Computer Science student blending code, content, and community leadership.
+          From generative AI research to running a 400+ member teens ministry, I like taking on
+          projects that ask me to think, write, and lead all at once.</p>
+        <div class="btn-row">
+          <a href="about.html" class="btn btn-primary">Read my story</a>
+          <a href="projects.html" class="btn btn-outline">View my projects</a>
+          <a href="planner.html" class="btn btn-gold">Open my planner</a>
+        </div>
+      </div>
+
+      <!-- Signature element: student ID / ledger card -->
+      <aside class="id-card" aria-label="Student identification card">
+        <div class="id-card-body">
+          <div class="avatar" role="img" aria-label="Photograph placeholder for Foluwasho Favour">FF</div>
+          <h3>Foluwasho Favour</h3>
+          <p class="id-role">Computer Science Student</p>
+          <dl class="id-facts">
+            <div><dt>Matric No.</dt><dd>2025/B/CSC/0651</dd></div>
+            <div><dt>Department</dt><dd>Computer Science</dd></div>
+            <div><dt>Institution</dt><dd>Miva Open University</dd></div>
+            <div><dt>Expected</dt><dd>2029</dd></div>
+            <div><dt>Email</dt><dd>f.foluwasho3222<br>@miva.edu.ng</dd></div>
+          </dl>
+        </div>
+        <div class="id-card-footer">VALID STUDENT RECORD · LEDGER #0651</div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- BIO -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Brief Biography</p>
+        <h2>A little about me</h2>
+      </div>
+      <div class="grid grid-2">
+        <p>I'm a Computer Science student at Miva Open University with a growing interest in
+          cyber threat management, data analysis, and generative AI. Alongside my studies, I've
+          spent the last few years leading people — as ex-President of my Fellowship of Christian
+          Students chapter, and as Regional Teens President for RCCG Region 46, where I've coordinated
+          programs for over 400 teenagers.</p>
+        <p>I'm also the founder of <strong>Life Box</strong>, a research initiative on autism awareness,
+          and I write scripts, poems, and content that I share across social media. Whether I'm
+          balancing a budget as Head of Finance for a regional ministry unit or debugging HTML for
+          a class project, I bring the same curiosity and follow-through to everything I take on.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK STATS -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="grid grid-3">
+        <div class="card">
+          <p class="eyebrow">Leadership</p>
+          <h3>450+ people led</h3>
+          <p class="small-note mt-0">Across FCS, RCCG Region 46 Teens Affairs, and PSF Region 46.</p>
+        </div>
+        <div class="card">
+          <p class="eyebrow">Research</p>
+          <h3>2 active research tracks</h3>
+          <p class="small-note mt-0">Autism awareness (Life Box) and generative AI (SaNDAI DataGen Scholars).</p>
+        </div>
+        <div class="card">
+          <p class="eyebrow">Craft</p>
+          <h3>Writer &amp; creator</h3>
+          <p class="small-note mt-0">Scriptwriting, poetry, and enlightenment content published across platforms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED VIDEO (multimedia requirement) -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Featured Media</p>
+        <h2>Autism awareness — enlightenment video</h2>
+        <p class="small-note">Demo player below (placeholder clip). Replace the video source in
+          <code>index.html</code> with your own upload before publishing.</p>
+      </div>
+      <video controls width="100%" style="border-radius:4px;border:1px solid var(--paper-line);max-height:420px;background:#000;">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>&copy; <span id="year"></span> Foluwasho Favour. Built for CSC Web Development Assignment.</span>
+    <ul class="foot-links">
+      <li><a href="https://www.linkedin.com/in/foluwasho-favour-786645230" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="contact.html">Get in touch</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
