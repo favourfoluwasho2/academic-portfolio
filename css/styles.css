@@ -267,6 +267,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   font-size: 2rem;
   font-weight:600;
   letter-spacing: 1px;
+  overflow: hidden;
+}
+.avatar img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
 }
 .id-card h3{ margin-bottom:2px; }
 .id-role{ color: var(--text-mute); font-size:0.85rem; margin-bottom: 16px; }
@@ -555,5 +563,4 @@ footer .foot-links{ display:flex; gap:18px; list-style:none; padding:0; margin:0
 
 @media (prefers-reduced-motion: reduce){
   *{ animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
-  }
-  
+}
